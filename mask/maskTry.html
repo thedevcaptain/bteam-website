@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body {
+        background-color: red;
+      }
+      #logo {
+        position: relative;
+        top: -280px;
+        left: 100px;
+        z-index: 1;
+        width: 300px;
+        opacity: 0
+      }
+      #mask{
+        position: relative;
+        z-index: 2;
+        opacity: 100%;
+        width: 500px;
+      }
+
+      #mask:hover {
+        transform: scale(3.5);
+        transition: 5s;
+      }
+
+      #wrapper {
+        background-color: white;
+        overflow: hidden;
+        max-width: 500px;
+        max-height: 291px
+      }
+
+      #wrapper:hover #logo {
+        opacity: 100%;
+        transition: 3s
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+
+
+
+      <img id="mask" src="C:/Users/minia/OneDrive/Desktop/WD project/mask2.png" alt="">
+      <img id="logo" src="C:/Users/minia/OneDrive/Desktop/WD project/bTeam.png" alt="">
+    </div>
+  </body>
+</html>
