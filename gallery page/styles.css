@@ -1,0 +1,34 @@
+.navbar {
+  text-align: center;
+  width: 150%%;
+  background-color: #c761fa;
+
+  font-size: 20px;
+  color: white;
+}
+
+#grass{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 50px;
+}
+
+#differentboots{
+  padding: 30px;
+}
+
+#pitch{
+  float: right;
+}
+
+#team{
+  float: right;
+  padding: 50px;
+}
+
+#footballs{
+float: right;
+
+}
