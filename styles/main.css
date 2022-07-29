@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Libre+Franklin&display=swap');
+/*
+Colors:
+#300350 - primary
+#AA00D4 - secondary
+#3737C8 - tertiary
+ */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Libre Franklin', serif;
+}
+nav{
+    background-color: #3737C8;
+}
+header{
+    margin-bottom: 25px;
+}
+.navbar-toggler span{
+    color: #fff;
+}
+.navbar-nav .nav-item>a{
+    color: #fff;
+    font-weight: lighter;
+}
+
+.navbar-nav .nav-item .active{
+    color: #fff;
+    font-weight: bold;
+    background-color: #2e2ea4;
+}
+.navbar-nav .nav-item>a:hover{
+    font-weight: bold;
+    background-color: #2e2ea4;
+}
+.collapse-button-nav{
+    color: #fff;
+}
+.navbar-toggler{
+    border-color: #fff;
+}
+footer h5{
+    flex:1;
+    text-align: left;
+}
