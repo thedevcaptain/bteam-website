@@ -1,0 +1,111 @@
+body {
+  background-color: #300350;
+}
+
+
+
+header {
+  background-color: #AA00D4;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  max-height: 100px;
+}
+
+.topHeader {
+  overflow: hidden;
+  display: inline-block;
+  margin: auto;
+  padding: 10px;
+}
+
+article {
+  background-color: white;
+  margin: auto;
+  padding: 15px;
+  width: 80%;
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
+  overflow: visible;
+}
+
+.author {
+  font-style: italic;
+  position: absolute;
+  right: 5px;
+  bottom: 1px;
+}
+
+footer {
+  background-color: #8700A8;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  margin-top:auto;
+}
+
+.logo {
+  float: left;
+  width: 170px;
+  position: absolute;
+  left: 500px;
+  top: 5px;
+  z-index: 1
+}
+ul {
+  display: flex;
+  vertical-align: middle;
+  position: relative;
+  top: 10px;
+  overflow: hidden;
+}
+li {
+  display: inline-block;
+  padding: 10px;
+  background-color: #FEDA8A;
+  border: 3px #FFFF83 solid;
+  font-size: bold;
+  border-radius: 10px;
+  margin: auto;
+  margin: 7px;
+  font-weight: bold
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.teamImage {
+  width: 300px;
+  display: block;
+  margin: auto
+}
+
+.leftImage {
+  float: left;
+  width: 140px;
+  margin-right: 20px;
+}
+
+.rightImage {
+  float: right;
+  width: 140px;
+  margin-left: 20px;
+}
+
+section {
+  padding: 10px;
+  margin: 10px;
+  border-top: 2px solid #AA00D4;
+  border-radius: 15px;
+  width: 200px
+}
+
+.wrap {
+  display: flex;
+  box-sizing: content-box;
+  justify-content: center;
+}
