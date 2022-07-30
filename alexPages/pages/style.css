@@ -2,21 +2,19 @@ body {
   background-color: #300350;
 }
 
-
-
 header {
   background-color: #AA00D4;
-  overflow: hidden;
   width: 100%;
   display: flex;
   max-height: 100px;
 }
 
 .topHeader {
-  overflow: hidden;
   display: inline-block;
   margin: auto;
   padding: 10px;
+  position: relative;
+  z-index: 2
 }
 
 article {
@@ -42,14 +40,13 @@ footer {
   text-align: center;
   height: 100px;
   margin-top:auto;
+  color:white
 }
 
 .logo {
   float: left;
   width: 170px;
-  position: absolute;
-  left: 500px;
-  top: 5px;
+  position: relative;
   z-index: 1
 }
 ul {
@@ -69,6 +66,16 @@ li {
   margin: auto;
   margin: 7px;
   font-weight: bold
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li:hover, li a:hover {
+  color: black;
+  background-color: #FFC852;
 }
 
 h2 {
@@ -143,22 +150,55 @@ section {
   text-align: center;
 }
 
-tr:nth-child(2) {
-  border-left: 25px solid orange;
+.lineUp tr:nth-child(2) {
+  border-left: 10px solid orange;
 }
 
-tr:nth-child(1n+3) {
-  border-left: 25px solid green;
+.lineUp tr:nth-child(1n+3) {
+  border-left: 10px solid green;
 }
 
-tr:nth-child(1n+7) {
-  border-left: 25px solid blue;
+.lineUp tr:nth-child(1n+7) {
+  border-left: 10px solid blue;
 }
 
-tr:nth-child(1n+10) {
-  border-left: 25px solid red;
+.lineUp tr:nth-child(1n+10) {
+  border-left: 10px solid red;
 }
 
-table {
-  border-spacing: 30px;
+.carousel {
+  margin: auto;
+  width: 480px;
+  height: 30px;
+  background-color: #AA00D4;
+  position: relative;
+  color: white;
+}
+
+.carousel > p {
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrowLeft {
+  position: absolute;
+  left: 10px;
+  font-size: 20px;
+  transform: rotate(180deg)
+
+}
+
+.arrowRight {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+}
+
+.teamDesc a {
+  text-decoration: none;
+  color: inherit;
 }

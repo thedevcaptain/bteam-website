@@ -15,22 +15,44 @@
         <ul>
           <li>HOME</li>
           <li>ABOUT</li>
-          <li>NEWS</li>
+          <li><a href="newsPages.html">NEWS</a></li>
           <li>MATCHES</li>
           <li>GALLERY</li>
-          <li>TEAMS</li>
+          <li><a href="teams.html">TEAMS</a></li>
         </ul>
       </div>
     </header>
     <article>
     <h2>First Team</h2>
-    <img src="../images/team.jpeg" class="teamPhoto">
+    <img src="../images/team.jpeg" class="teamPhoto" id="firstPhoto">
+    <img src="../images/image1.jpeg" class="teamPhoto" style="display:none" id="secondPhoto">
+    </script>
+    <div class="carousel">
+      <span class="arrowLeft" onclick="showPrevious()">
+        &#10148;
+      </span>
+      <p>NEXT MATCHES</p>
+      <span class="arrowRight" onclick="showNext()">
+        &#10148;
+      </span>
+    </div>
+    <script type="text/javascript">
+    function showNext() {
+      document.getElementById('secondPhoto').style.display = "block";
+      document.getElementById('firstPhoto').style.display = "none";
+    }
+    function showPrevious() {
+      document.getElementById('secondPhoto').style.display = "none";
+      document.getElementById('firstPhoto').style.display = "block";
+    }
+
+    </script>
       <table class="lineUp">
         <tr>
           <th>POSITION</th><th>NAME</th><th>NUMBER</th>
         </tr>
         <tr>
-          <td>GK</td><td>M. Rui</td><td>1</td>
+          <td>GK</td><td>R. Patricio</td><td>1</td>
         </tr>
         <tr>
           <td>DF</td><td>C. Smalling</td><td>6</td>
